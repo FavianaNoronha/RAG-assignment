@@ -1,0 +1,15 @@
+category,query,baseline_rank,rerank_rank,gold_in_top3_baseline,gold_in_top3_rerank,rescued
+Exception/Corner Case,Can T31 or T32 extent-of-burn codes be used for burn sequelae?,9,1,False,True,True
+Exception/Corner Case,Should a perinatal condition code still be used when the patient is an adult?,5,1,False,True,True
+Exception/Corner Case,"If two drugs were taken together in a poisoning, are they coded separately?",4,1,False,True,True
+Keyword Trap,Can a patient already diagnosed with HIV illness be coded as asymptomatic HIV later?,4,1,False,True,True
+Keyword Trap,Do signs routinely associated with a disease get extra codes?,6,1,False,True,True
+Keyword Trap,"In an outpatient visit, how should a suspected or probable diagnosis be reported?",miss,miss,False,False,False
+Keyword Trap,Can a probable diagnosis at discharge be coded as if it exists for an inpatient admission?,1,1,True,True,False
+Exception/Corner Case,Can two codes with an Excludes1 note ever be reported together?,5,4,False,False,False
+Negation/Constraint,Can severe sepsis be the principal diagnosis?,2,1,True,True,False
+Negation/Constraint,Should Z79.4 long-term insulin use be assigned when insulin is only given temporarily during the encounter?,1,1,True,True,False
+Negation/Constraint,The doctor documents possible COVID-19. Can U07.1 be assigned?,1,1,True,True,False
+Other (buried rule),A patient has MRSA pneumonia. Should an extra MRSA infection code be added?,2,1,True,True,False
+Other (buried rule),Provider documents both alcohol use and alcohol dependence. Which code is assigned?,1,2,True,True,False
+Other (buried rule),Which clinical information can be taken from clinicians who are not the patient's provider?,5,6,False,False,False

@@ -1,0 +1,4 @@
+Pipeline,Mean (ms),Std (ms),p95 (ms)
+1: Baseline (embed + search),5.48,0.38,6.14
+2: Baseline + cross-encoder re-rank,41.69,5.27,50.5
+Re-rank step only,36.22,5.22,44.93
