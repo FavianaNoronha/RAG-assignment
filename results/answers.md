@@ -33,6 +33,20 @@
 
 **Answer 2:** No, signs routinely associated with a disease do not get extra codes.
 
+## Which codes are not allowed to be reported when the cause of a collapse is a hurricane?
+**Expected:** X36.0.- (collapse of dam/man-made structure) is not assigned when the collapse is due to the hurricane; it is limited to collapses from earth surface movements.
+
+**Answer 1:** The provided passages do not answer this.
+
+**Answer 2:** Code X36.0- is not allowed to be reported when the cause of a collapse is a hurricane.
+
+## Should obstetric complication codes not be used for sepsis after delivery procedures?
+**Expected:** Correct: O85 is not assigned for sepsis following an obstetrical procedure; use the postprocedural sepsis guidance (e.g. O86.04).
+
+**Answer 1:** No, obstetric complication codes should not be used for sepsis after delivery procedures.
+
+**Answer 2:** No, Obstetric complication codes should not be used for sepsis after delivery procedures. [1] explicitly states that Code O85 should not be assigned for sepsis following an obstetrical procedure.
+
 ## In an outpatient visit, how should a suspected or probable diagnosis be reported?
 **Expected:** Outpatient: do NOT code it; code signs/symptoms or the reason for the visit instead (inpatient is the opposite).
 

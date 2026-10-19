@@ -2,8 +2,10 @@ category,query,baseline_rank,rerank_rank,gold_in_top3_baseline,gold_in_top3_rera
 Exception/Corner Case,Can T31 or T32 extent-of-burn codes be used for burn sequelae?,9,1,False,True,True
 Exception/Corner Case,Should a perinatal condition code still be used when the patient is an adult?,5,1,False,True,True
 Exception/Corner Case,"If two drugs were taken together in a poisoning, are they coded separately?",4,1,False,True,True
-Keyword Trap,Can a patient already diagnosed with HIV illness be coded as asymptomatic HIV later?,4,1,False,True,True
-Keyword Trap,Do signs routinely associated with a disease get extra codes?,6,1,False,True,True
+Other (distractor chunks),Can a patient already diagnosed with HIV illness be coded as asymptomatic HIV later?,4,1,False,True,True
+Other (distractor chunks),Do signs routinely associated with a disease get extra codes?,6,1,False,True,True
+Negation/Constraint,Which codes are not allowed to be reported when the cause of a collapse is a hurricane?,4,1,False,True,True
+Negation/Constraint,Should obstetric complication codes not be used for sepsis after delivery procedures?,8,1,False,True,True
 Keyword Trap,"In an outpatient visit, how should a suspected or probable diagnosis be reported?",miss,miss,False,False,False
 Keyword Trap,Can a probable diagnosis at discharge be coded as if it exists for an inpatient admission?,1,1,True,True,False
 Exception/Corner Case,Can two codes with an Excludes1 note ever be reported together?,5,4,False,False,False
