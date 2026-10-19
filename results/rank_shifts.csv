@@ -6,6 +6,9 @@ Other (distractor chunks),Can a patient already diagnosed with HIV illness be co
 Other (distractor chunks),Do signs routinely associated with a disease get extra codes?,6,1,False,True,True
 Negation/Constraint,Which codes are not allowed to be reported when the cause of a collapse is a hurricane?,4,1,False,True,True
 Negation/Constraint,Should obstetric complication codes not be used for sepsis after delivery procedures?,8,1,False,True,True
+Keyword Trap,How long is 7th character A used for a fracture caused by disease such as osteoporosis?,6,2,False,True,True
+Keyword Trap (re-ranker trapped),A woman wants to give one of her kidneys to her brother. How is her visit coded?,1,7,True,False,False
+Keyword Trap (re-ranker trapped),Patient had a heart attack two years ago and needs no more treatment for it. Which heart attack code is used?,2,6,True,False,False
 Keyword Trap,"In an outpatient visit, how should a suspected or probable diagnosis be reported?",miss,miss,False,False,False
 Keyword Trap,Can a probable diagnosis at discharge be coded as if it exists for an inpatient admission?,1,1,True,True,False
 Exception/Corner Case,Can two codes with an Excludes1 note ever be reported together?,5,4,False,False,False

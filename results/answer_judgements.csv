@@ -1,0 +1,20 @@
+category,query,baseline_rank,rerank_rank,answer1,answer2,note
+Exception/Corner Case,Can T31 or T32 extent-of-burn codes be used for burn sequelae?,9,1,No answer,No answer,LLM refused even though the gold chunk was ranked 1 for Answer 2
+Exception/Corner Case,Should a perinatal condition code still be used when the patient is an adult?,5,1,No answer,Correct,Gold chunk outside Answer 1's top 3
+Exception/Corner Case,"If two drugs were taken together in a poisoning, are they coded separately?",4,1,Wrong,Wrong,A1 cites the multiple-unspecified-drugs rule; A2 misreads 'assign the code only once' despite having the gold chunk
+Other (distractor chunks),Can a patient already diagnosed with HIV illness be coded as asymptomatic HIV later?,4,1,Wrong,Correct,A1 quotes the Z21 rule from a distractor chunk
+Other (distractor chunks),Do signs routinely associated with a disease get extra codes?,6,1,Correct,Correct,A1's rule is not in its own passages (likely model prior knowledge)
+Negation/Constraint,Which codes are not allowed to be reported when the cause of a collapse is a hurricane?,4,1,No answer,Correct,Gold chunk outside Answer 1's top 3
+Negation/Constraint,Should obstetric complication codes not be used for sepsis after delivery procedures?,8,1,Wrong,Correct,A1 misstates the rule (says O85 should be assigned)
+Keyword Trap,How long is 7th character A used for a fracture caused by disease such as osteoporosis?,6,2,No answer,Correct,Baseline top 3 dominated by traumatic-fracture chunks
+Keyword Trap (re-ranker trapped),A woman wants to give one of her kidneys to her brother. How is her visit coded?,1,7,Correct,No answer,Re-ranking pushed the gold chunk from rank 1 to 7
+Keyword Trap (re-ranker trapped),Patient had a heart attack two years ago and needs no more treatment for it. Which heart attack code is used?,2,6,Correct,No answer,Re-ranking pushed the gold chunk from rank 2 to 6
+Keyword Trap,"In an outpatient visit, how should a suspected or probable diagnosis be reported?",miss,miss,Wrong,No answer,Gold chunk not in top 10; A1 states the inpatient rule for outpatients
+Keyword Trap,Can a probable diagnosis at discharge be coded as if it exists for an inpatient admission?,1,1,Correct,Correct,
+Exception/Corner Case,Can two codes with an Excludes1 note ever be reported together?,5,4,Wrong,Wrong,"Both omit the 'unrelated conditions' exception (gold rank 5 -> 4, outside top 3)"
+Negation/Constraint,Can severe sepsis be the principal diagnosis?,2,1,Correct,Correct,
+Negation/Constraint,Should Z79.4 long-term insulin use be assigned when insulin is only given temporarily during the encounter?,1,1,Correct,Correct,Both start with 'Yes' but state the correct rule
+Negation/Constraint,The doctor documents possible COVID-19. Can U07.1 be assigned?,1,1,Correct,Correct,
+Other (buried rule),A patient has MRSA pneumonia. Should an extra MRSA infection code be added?,2,1,Correct,Correct,
+Other (buried rule),Provider documents both alcohol use and alcohol dependence. Which code is assigned?,1,2,Correct,Correct,
+Other (buried rule),Which clinical information can be taken from clinicians who are not the patient's provider?,5,6,Partial,Partial,Gold list chunk outside top 3 in both (rank 5 -> 6)

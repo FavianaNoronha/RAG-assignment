@@ -8,3 +8,4 @@ google-genai==1.47.0
 nbclient
 nbformat
 ipykernel
+mlx-lm==0.29.1

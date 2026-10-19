@@ -18,6 +18,7 @@ Everything is in **[`RAG_Assignment.ipynb`](RAG_Assignment.ipynb)**, saved with 
 | `icd_10_cm_october_2025_guidelines_0.pdf` | Source document |
 | `results/rank_shifts.csv` | Gold-chunk rank before and after re-ranking for each test query |
 | `results/answers.md` | Answer 1 vs Answer 2 for each test query, with the expected answer |
+| `results/answer_judgements.csv` | Each answer judged Correct / Partial / Wrong / No answer |
 | `results/latency.csv` | Baseline vs re-rank latency (mean / std / p95) |
 | `results/scaling.csv` | Cross-encoder cost per pair as N grows |
 | `llm_cache.json` | Cached LLM responses, so a re-run gives the same answers without API calls |
@@ -26,8 +27,8 @@ Everything is in **[`RAG_Assignment.ipynb`](RAG_Assignment.ipynb)**, saved with 
 
 ```bash
 pip install -r requirements.txt
-export GEMINI_API_KEY=...        # or the notebook asks for it with a hidden prompt
 jupyter notebook RAG_Assignment.ipynb
 ```
 
+The LLM is a local Qwen2.5-7B-Instruct (4-bit, MLX, Apple silicon); no API key is needed. Answers are cached in `llm_cache.json`.
 `python run_notebook.py` runs the whole notebook headless and saves the outputs in place.
